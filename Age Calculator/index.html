@@ -58,16 +58,16 @@
                 m3 = 11;
                 y3--;
             }
-            result.innerHTML = `You are $(y3) years, $(m3) months and $(d3) days old`;
+            result.innerHTML = `You are ${y3} years, ${m3} months and ${d3} days old`;
         }
 
         function getDaysInMonth(year, month){
             return new Date(year, month, 0).getDate();
         }
 
+        document.querySelector("button").addEventListener("click", calculateAge);
 
-
-    </script>
+     </script>
 
     
 </body>
